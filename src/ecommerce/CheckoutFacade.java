@@ -2,8 +2,8 @@ package ecommerce;
 
 public class CheckoutFacade {
     public void processOrder(Payment payment, double amount) {
-        System.out.println("🛒 Начало оформления заказа...");
+        System.out.println("Order processing started...");
         payment.pay(amount);
-        System.out.println("📨 Чек и уведомление отправлены клиенту.\n");
+        System.out.println("Receipt and notification have been sent to the customer.\n");
     }
 }

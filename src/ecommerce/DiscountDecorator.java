@@ -11,7 +11,7 @@ public class DiscountDecorator extends PaymentDecorator {
     @Override
     public void pay(double amount) {
         double discounted = amount - (amount * discountPercent / 100);
-        System.out.println("✅ Применена скидка " + discountPercent + "%");
+        System.out.println("Discount applied: " + discountPercent + "%");
         super.pay(discounted);
     }
 }

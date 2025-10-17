@@ -8,8 +8,8 @@ public class FraudDetectionDecorator extends PaymentDecorator {
 
     @Override
     public void pay(double amount) {
-        System.out.println("🕵️ Проверка транзакции на подозрительную активность...");
+        System.out.println("Checking transaction for suspicious activity...");
         super.pay(amount);
-        System.out.println("✅ Проверка завершена. Транзакция безопасна.");
+        System.out.println("Security check completed. Transaction is safe.");
     }
 }

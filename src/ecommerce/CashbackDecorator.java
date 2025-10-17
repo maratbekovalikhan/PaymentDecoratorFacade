@@ -12,6 +12,6 @@ public class CashbackDecorator extends PaymentDecorator {
     public void pay(double amount) {
         double cashback = amount * cashbackPercent / 100;
         super.pay(amount);
-        System.out.println("💰 Начислен кэшбэк: " + cashback + " ₸");
+        System.out.println("Cashback credited: " + cashback);
     }
 }
